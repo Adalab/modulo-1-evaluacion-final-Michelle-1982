@@ -1,0 +1,102 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    justify-content:flex-start; 
+    background:url('../../recursos/header.jpg') left top no-repeat #F0EBE5 ;
+    background-size: cover;
+    height: 100vh;
+}
+
+.hamburguer {
+    width: 24px;
+    height: 24px;
+    margin: 36px 43px 98px 33px;
+    object-fit: contain;
+}
+.hamburguer-container {
+    margin-right: 43px;
+}
+
+.logo {
+  height: 96px;
+  width: 213px;
+}
+.logo-container {
+  width: 213px;
+  height: 96px;
+  margin: 0 101px 62px 43px;
+  margin-left: 50vh;
+ 
+}
+.vacio-container { 
+    margin-left: 20px;
+}
+.links {
+    display: flex;
+    gap: 30px;
+}
+.creando-espacios {
+    position: absolute;
+    align-items: center;
+    top: 200px;
+    margin-left: 50vh;
+}
+.links a {
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: rgb(229,9,20);
+    color: white;
+    border-radius: 4px;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+}
+
+.Titulos-1 {
+  width: 148px;
+  height: 48px;
+  margin: 9px 45px 9px 55px;
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color:#0c474b;
+}
+
+.boton-comprar {
+    width: 176px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 329px 0 0;
+    padding: 12px 24px;
+    position: absolute;
+    align-items: center;
+    background-color: #0c474b;
+    top: 250px;
+}  
+
+.span-comprar {
+  width: 128px;
+  height: 24px;
+  flex-grow: 0;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;  
+}
