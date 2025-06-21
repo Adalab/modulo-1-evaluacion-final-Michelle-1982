@@ -3,13 +3,50 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.headericons{
+  display: flex;
+  justify-content:flex-start
+}
+
 .header {
-    display: flex;
-    justify-content:flex-start; 
     background:url('../../recursos/header.jpg') left top no-repeat #F0EBE5 ;
     z-index: -1;
     background-size: cover;
     height: 100vh;
+}
+
+.header1 {
+    display: flex;
+    justify-content:space-between;
+    position:fixed;
+    top:0;
+    width:100%;
+}
+
+.header2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav{
+    display: none;
+}
+
+.nav-span{
+  width: 97px;
+  height: 23px;
+  flex-grow: 0;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0c474b;
 }
 
 .hamburguer {
@@ -25,6 +62,7 @@
 .logo {
   height: 96px;
   width: 213px;
+  margin-top: 19px;
 }
 
 .logo-container {
@@ -63,9 +101,8 @@
 }
 
 .Titulos-1 {
-  width: 148px;
   height: 48px;
-  margin: 9px 45px 9px 55px;
+  margin: 62px 45px 9px 55px;
   font-family: Poppins;
   font-size: 36px;
   font-weight: 600;
@@ -85,7 +122,6 @@
     justify-content:flex-start;
     align-items: center;
     gap: 10px;
-    margin: 12px 329px 0 0;
     padding: 12px 24px;
     align-items: center;
     background-color: #0c474b;
@@ -296,6 +332,11 @@
 
 }
 
+.espacioheader{
+  margin-top: 20px;
+
+}
+
 .espaciofooter2{
   margin-top:70px;
   
@@ -336,4 +377,20 @@
 .arrowtop{
   width: 20px;
   color:#0c474b;
+}
+
+/* media queries */
+
+@media screen and (min-width: 900px) {
+
+}
+
+@media screen and (min-width: 1728px) {
+  .hamburguer{
+    display: none;
+  }
+
+  .nav{
+    display: block;
+  }
 }
