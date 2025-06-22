@@ -37,6 +37,7 @@
 .nav-span{
   width: 97px;
   height: 23px;
+
   flex-grow: 0;
   font-family: Poppins;
   font-size: 16px;
@@ -171,12 +172,16 @@
     gap: 10px;
 }
 
+.imgmod4{
+  height: 100%;
+}
+
 .gridContenedor4{
     display: grid;
     grid-template-columns: 1fr;
-    text-align: center;
+    align-content: center;
     width: 100%; 
-    gap: 10px;
+    gap: 20px;
 }
 
 .grid__item{
@@ -189,6 +194,10 @@
 
 .grid__header{
   grid-column: span 2;
+}
+
+.grid4__item{
+  text-align: center;
 }
 
 .grid__item2 {
@@ -226,7 +235,6 @@
 .gridtexto{
   width: 208px;
   height: 96px;
-  margin: 53px 53px 31px 61px;
   font-family: Poppins;
   font-size: 16px;
   font-weight: normal;
@@ -347,11 +355,7 @@
   text-align: center;
   color: #fff;
 }
-.background4{
-  height: 474px;
-  padding: 292.6px 165px 137.1px 636px;
-  background:url('../../recursos/creando-espacios.jpg') left top no-repeat
-}
+
 .footer{
   display: flex;
   justify-content:center;
@@ -359,9 +363,15 @@
   align-items: center;
   background-color: #0c474b;
 }
-.espaciofooter{
-  margin-top: 20px;
 
+.footer-links{
+ display: flex;
+ margin-top: 20px;
+ margin-left: 20px;
+  justify-content:center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0c474b; 
 }
 
 .espacioheader{
@@ -408,7 +418,7 @@
 }
 .arrowtop{
   width: 20px;
-  color:#0c474b;
+  color:#fff;
 }
 
 /* media queries */
@@ -428,6 +438,27 @@
   .grid__item{
     grid-column: span 1;
   }
+  .footer{
+    justify-content: space-between;
+    flex-direction:row;
+  }
+
+  /*borrar*/
+  .hamburguer{
+    display: none;
+  }
+
+  .nav{
+    display: flex;
+    justify-content:space-around;
+  }
+
+
+  .header1{
+    align-items: center;
+    margin-left: 20px;
+  }
+
 }
 
 @media screen and (min-width: 850px) {
@@ -436,10 +467,15 @@
   }
 
   .nav{
-    display: block;
+    display: flex;
+    justify-content:flex-start;
   }
 
   .grid4{
     grid-template-columns: 50% 50%;
+  }
+
+  .modulo4{
+    padding: 0px 0px 0px 0px;
   }
 }
