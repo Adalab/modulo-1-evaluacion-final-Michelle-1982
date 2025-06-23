@@ -35,11 +35,11 @@
   flex-grow: 0;
   font-family: Poppins;
   font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
+  font-weight: regular;
+  font-stretch: regular;
+  font-style: regular;
+  line-height: regular;
+  letter-spacing: regular;
   text-align: left;
   color: #0c474b;
 }
@@ -97,6 +97,11 @@
     top: 250px;
 }  
 
+.boton-comprar4 {
+    background-color: #0c474b;
+    padding: 12px 24px;
+} 
+
 .span-comprar {
     width: 128px;
     height: 24px;
@@ -148,6 +153,7 @@
     grid-template-columns: 1fr;
     align-content: center;
     width: 100%; 
+    height: 200px;
     gap: 20px;
 }
 
@@ -268,7 +274,7 @@
 }
 
 .gridtitulo4{
-   width: 430px;
+  width: 430px;
   height: 88px;
   margin: 0 0 34px;
   font-family: Poppins;
@@ -295,18 +301,6 @@
   text-align: center;
   color: #0c474b;
 }
-.button4{
-  width: 176px;
-  height: 48px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin: 34px 127px 0;
-  padding: 12px 24px;
-  background-color: #0c474b;
-}
 
 .gridcomprarahora4{
   width: 128px;
@@ -321,24 +315,30 @@
   letter-spacing: normal;
   text-align: center;
   color: #fff;
+  background-color:#0c474b;
+  padding: 12px 24px;
 }
 
 .footer{
+  background-color: #0c474b;
+}
+
+.div-footer{
   display: flex;
   justify-content:center;
   flex-direction: column;
   align-items: center;
-  background-color: #0c474b;
+  
 }
 
 .footer-links{
  display: flex;
  margin-top: 20px;
  margin-left: 20px;
-  justify-content:center;
-  flex-direction: column;
-  align-items: center;
-  background-color: #0c474b; 
+ justify-content:center;
+ flex-direction: column;
+ align-items: center;
+ background-color: #0c474b; 
 }
 
 .espacioheader{
@@ -387,12 +387,13 @@
   width: 20px;
   color:#fff;
 }
-
+.footerarrow{
+ display: flex;
+ justify-content: flex-end;
+}
 /* media queries */
 
-
-
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
 
   .grid {
     grid-template-columns: 33% 33% 33%;
@@ -405,29 +406,14 @@
   .grid__item{
     grid-column: span 1;
   }
-  .footer{
+
+  .div-footer{
     justify-content: space-between;
-    flex-direction:row;
+    flex-direction: row;
   }
-
-  /*borrar*/
-  .hamburguer{
-    display: none;
-  }
-
-  .nav{
-    display: flex;
-    justify-content:space-around;
-  }
-
-
-  .header1{
-    align-items: center;
-  }
-
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1728px) {
   .hamburguer{
     display: none;
   }
@@ -444,5 +430,9 @@
 
   .modulo4{
     padding: 0px 0px 0px 0px;
+  }
+
+  .gridContenedor4{
+    height: 100%;
   }
 }
