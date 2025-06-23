@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-.headericons{
-  display: flex;
-  justify-content:flex-start
-}
-
 .header {
     background:url('../../recursos/header.jpg') left top no-repeat #F0EBE5 ;
     z-index: -1;
@@ -37,7 +32,6 @@
 .nav-span{
   width: 97px;
   height: 23px;
-
   flex-grow: 0;
   font-family: Poppins;
   font-size: 16px;
@@ -75,24 +69,11 @@
   margin-left: 50vh;
 }
 
-.header-main {
-    display: flex;
-    flex-direction: column;
-    position:absolute;
-    margin-top:50vh;
-    width:100%;
-    align-items: center;
-}
-
 .links {
     display: flex;
     gap: 30px;
 }
 
-.creando-espacios {
-    align-items: center;
-    top: 200px;
-}
 .links a {
     text-decoration: none;
     padding: 8px 20px;
@@ -103,7 +84,7 @@
     font-size: 14px;
 }
 
-.Titulos-1 {
+.Title1 {
   height: 48px;
   margin: 62px 45px 9px 55px;
   font-family: Poppins;
