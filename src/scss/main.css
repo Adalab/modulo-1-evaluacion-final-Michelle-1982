@@ -69,21 +69,6 @@
   margin-left: 50vh;
 }
 
-.links {
-    display: flex;
-    gap: 30px;
-}
-
-.links a {
-    text-decoration: none;
-    padding: 8px 20px;
-    background-color: rgb(229,9,20);
-    color: white;
-    border-radius: 4px;
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-}
-
 .Title1 {
   height: 48px;
   margin: 62px 45px 9px 55px;
@@ -155,6 +140,7 @@
 
 .imgmod4{
   height: 100%;
+  width: 100%;
 }
 
 .gridContenedor4{
@@ -437,7 +423,6 @@
 
   .header1{
     align-items: center;
-    margin-left: 20px;
   }
 
 }
@@ -454,6 +439,7 @@
 
   .grid4{
     grid-template-columns: 50% 50%;
+    gap:0px
   }
 
   .modulo4{
